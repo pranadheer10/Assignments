@@ -8,6 +8,11 @@ public class Example {
 		
 	}
 	
+	public void sayHello() {
+		
+		System.out.println("Hello everybody");
+	}
+	
 	
 	public static void main(String[] args) {
 		
