@@ -20,7 +20,7 @@ public class Example {
 		
 		
 		example.display();
-		
+		example.sayHello();
 		
 	}
 }
