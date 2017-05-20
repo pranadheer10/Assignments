@@ -26,6 +26,7 @@ public class Example {
 		
 		example.display();
 		example.sayHello();
+		example.sayBye();
 		
 	}
 }
