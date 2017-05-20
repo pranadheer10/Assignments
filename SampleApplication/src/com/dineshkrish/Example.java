@@ -13,6 +13,11 @@ public class Example {
 		System.out.println("Hello everybody");
 	}
 	
+	public void sayBye() {
+		
+		System.out.println("Good bye..");
+	}
+	
 	
 	public static void main(String[] args) {
 		
