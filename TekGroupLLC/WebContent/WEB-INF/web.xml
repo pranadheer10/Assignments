@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>TekGroupLLC</display-name>
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>applicationName</param-name>
+		<param-value>Tek-Group LLC</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.controller.LoginServlet</servlet-class>
+		<init-param>
+			<param-name>servletName</param-name>
+			<param-value>Dashbord</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Registration</servlet-name>
+		<servlet-class>com.controller.RegistrationServlet</servlet-class>
+		<init-param>
+			<param-name>servletName</param-name>
+			<param-value>Dashbord</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Registration</servlet-name>
+		<url-pattern>/registrationPage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Edit</servlet-name>
+		<servlet-class>com.controller.EditServlet</servlet-class>
+		<init-param>
+			<param-name>servletName</param-name>
+			<param-value>Dashbord</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Edit</servlet-name>
+		<url-pattern>/editPage</url-pattern>
+	</servlet-mapping>
+	
+
+
+</web-app>
