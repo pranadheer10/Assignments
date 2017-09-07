@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.ord/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="triangle" class="com.springs.Triangle">
+		<property name="pointA" ref="point1" />
+		<property name="pointB" ref="point2" />
+		<property name="pointC" ref="point3" />
+	</bean>
+
+	<bean id="point1" class="com.springs.Points">
+		<property name="x" value="0" />
+		<property name="y" value="0" />
+	</bean>
+	<bean id="point2" class="com.springs.Points">
+		<property name="x" value="10" />
+		<property name="y" value="0" />
+	</bean>
+	<bean id="point3" class="com.springs.Points">
+		<property name="x" value="0" />
+		<property name="y" value="10" />
+	</bean>
+
+	
+	
+	<!-- TrainagleCollections_List bean -->
+	<bean id="triangleList" class="com.springs.TriangleCollections_List">
+		<property name="points">
+			<list>
+				<ref bean="point1" />
+				<ref bean="point2" />
+				<ref bean="point3" />
+			</list>
+		</property>
+	</bean>
+
+
+	<!-- Bean Autowiring byName  -->
+	<bean id="triangleByName" class="com.springs.TriangleAutoWiring" autowire="byName"/>
+	
+	<bean id="triangleByConstructor" class="com.springs.TriangleAutoWiring" autowire="constructor">
+		<constructor-arg ref="point1"/>
+		<constructor-arg ref="point2"/>
+		<constructor-arg ref="point3"/>
+	</bean>
+
+
+
+
+
+
+</beans>
