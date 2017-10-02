@@ -1,3 +1,2 @@
-wordConfig:something
-preamble: The lucky word is
-luckyword: nokia
+server:
+  port: 8090
