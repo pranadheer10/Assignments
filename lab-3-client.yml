@@ -1,3 +1,4 @@
-spring:
-  profiles: east
-lucky-word:Clover
+---
+wordConfig:
+  preamble: The lucky word is
+  luckyword: nokia
